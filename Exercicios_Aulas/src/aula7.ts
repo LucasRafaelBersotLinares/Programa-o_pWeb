@@ -18,17 +18,12 @@ nome.forEach((item) => {
 });
 */
 
-/*Exercício 3:*/
+/*Exercício 3:
 function transforma(array:string[]) {
-    let arrayT = []
-
-    for(let i = 0; i < array.length;i++){
-        arrayT[i] = array[i]?.split(".").join('')
-    }  
-    return arrayT.map(Number)
+    return array.sort((a,b) => a.localeCompare(b, undefined, {numeric: true}))
 }
-
-
 const array: string[] = ['1.10.0', '1.2.1', '1.0.5', '1.20.0'];
-console.log(transforma(array).sort());
+console.log(transforma(array));
+*/
+
 
