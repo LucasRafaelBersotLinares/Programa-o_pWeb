@@ -23,7 +23,7 @@ function executarTarefas(tarefas: Tarefa[], callback: (desc: string, index: numb
     let intervalo = setInterval(() => {
         if(tarefas[i]?.descricao == "Cancelar")
             clearInterval(intervalo);
-            callback(tarefas[i]!.descricao, i, tarefas.length)
+        callback(tarefas[i]!.descricao, i, tarefas.length)
         if(i==(tarefas.length-1))
             clearInterval(intervalo);
         tarefas[i]!.concluida = true;
