@@ -30,7 +30,6 @@ function executarTarefas(tarefas: Tarefa[], callback: (desc: string, index: numb
         i++
     }, 1500);
 };
-
 executarTarefas(tarefas, imprimirTarefa);
 
 
